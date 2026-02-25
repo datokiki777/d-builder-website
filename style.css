@@ -225,4 +225,46 @@ section {
     padding: 0 10px;
 }
 
+/* Why Us Section */
+.why-us {
+    background-color: #ffffff;
+    padding: 80px 0;
+    border-top: 1px solid #eee;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feature-item {
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #0d3d7a;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
 
