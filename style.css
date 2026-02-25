@@ -267,4 +267,62 @@ section {
     line-height: 1.5;
 }
 
+/* FAQ Section - Enhanced Style */
+.faq {
+    background-color: #f1f3f5;
+    padding: 90px 0;
+}
+
+.faq-list {
+    max-width: 850px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.faq-item {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 4px; /* უფრო კლასიკური, ოთხკუთხა სტილი */
+    border-left: 5px solid #0d3d7a; /* სოლიდური ლურჯი აქცენტი */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateX(5px);
+}
+
+.faq-item h3 {
+    color: #0d3d7a;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.faq-item p {
+    color: #4a4a4a;
+    font-size: 15.5px;
+    line-height: 1.7;
+}
+
+/* სექციის სათაურის ხაზი */
+.faq h2 {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.faq h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ffc107;
+}
+
 
