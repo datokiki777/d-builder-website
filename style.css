@@ -283,46 +283,52 @@ section {
 
 .faq-item {
     background: #ffffff;
-    padding: 30px;
-    border-radius: 4px; /* უფრო კლასიკური, ოთხკუთხა სტილი */
-    border-left: 5px solid #0d3d7a; /* სოლიდური ლურჯი აქცენტი */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-    transition: 0.3s ease;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    overflow: hidden;
 }
 
-.faq-item:hover {
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transform: translateX(5px);
-}
-
-.faq-item h3 {
+.faq-question {
+    width: 100%;
+    padding: 20px 25px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    text-align: left;
     color: #0d3d7a;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 600;
-    margin-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
 }
 
-.faq-item p {
-    color: #4a4a4a;
-    font-size: 15.5px;
-    line-height: 1.7;
+.faq-question::after {
+    content: '+';
+    font-size: 22px;
+    color: #ffc107;
 }
 
-/* სექციის სათაურის ხაზი */
-.faq h2 {
-    position: relative;
-    padding-bottom: 15px;
+.faq-question.active::after {
+    content: '−';
 }
 
-.faq h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #ffc107;
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #fafafa;
 }
+
+.faq-answer p {
+    padding: 20px 25px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
 
 
