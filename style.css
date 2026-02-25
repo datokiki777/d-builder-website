@@ -193,4 +193,36 @@ section {
     scroll-margin-top: 80px;
 }
 
+/* Why Us Section */
+.why-us {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feature-item .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #0d3d7a;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: #666;
+    padding: 0 10px;
+}
+
 
