@@ -1,20 +1,22 @@
-<svg width="500" height="500" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <circle cx="256" cy="256" r="230" fill="#1B4294"/>
 
   <defs>
-    <linearGradient id="silverFull" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#CBD5E0"/>
+    <linearGradient id="silverSolid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
       <stop offset="50%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#718096"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
     </linearGradient>
   </defs>
 
-  <path d="M256 80 L415 155 L385 390 L256 475 L127 390 L97 155 Z M256 95 L112 165 L142 380 L256 460 L370 380 L400 165 Z" 
-        fill="url(#silverFull)"/>
+  <path d="M256 70 L425 150 L395 400 L256 485 L117 400 L87 150 Z M256 90 L107 160 L137 385 L256 465 L375 385 L405 160 Z" 
+        fill="url(#silverSolid)"/>
 
-  <path d="M180 200 H215 V285 H180 Z" fill="url(#silverFull)"/> <path d="M210 200 C320 200 330 240 330 270 C330 300 320 340 230 340 L220 310 C290 310 300 290 300 270 C300 250 290 230 220 230 L210 230 Z" 
-        fill="url(#silverFull)"/>
+  <g fill="url(#silverSolid)">
+    <rect x="160" y="190" width="35" height="130"/>
+    <path d="M205 190 C330 190 340 230 340 265 C340 300 330 340 240 340 L230 305 C295 305 305 285 305 265 C305 245 295 225 205 225 Z"/>
+  </g>
 
-  <path d="M305 200 C390 200 395 240 395 270 C395 300 390 340 305 340 L305 310 C360 310 365 290 365 270 C365 250 360 230 305 230 Z" 
-        fill="url(#silverFull)"/>
+  <path d="M315 190 C405 190 410 230 410 265 C410 300 405 340 315 340 L315 305 C375 305 380 285 380 265 C380 245 375 225 315 225 Z" 
+        fill="url(#silverSolid)"/>
 </svg>
