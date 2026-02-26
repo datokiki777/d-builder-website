@@ -1,22 +1,52 @@
 <svg width="600" height="600" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background Circle -->
   <circle cx="256" cy="256" r="230" fill="#1B4294"/>
 
+  <!-- Gradients -->
   <defs>
-    <linearGradient id="silverSolid" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E2E8F0"/>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5E7EB"/>
       <stop offset="50%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#9CA3AF"/>
     </linearGradient>
   </defs>
 
-  <path d="M256 70 L425 150 L395 400 L256 485 L117 400 L87 150 Z M256 90 L107 160 L137 385 L256 465 L375 385 L405 160 Z" 
-        fill="url(#silverSolid)"/>
+  <!-- Shield Border -->
+  <path d="M256 95 
+           L390 155 
+           L360 385 
+           L256 450 
+           L152 385 
+           L122 155 Z"
+        fill="none"
+        stroke="url(#silver)"
+        stroke-width="22"
+        stroke-linejoin="round"/>
 
-  <g fill="url(#silverSolid)">
-    <rect x="160" y="190" width="35" height="130"/>
-    <path d="M205 190 C330 190 340 230 340 265 C340 300 330 340 240 340 L230 305 C295 305 305 285 305 265 C305 245 295 225 205 225 Z"/>
-  </g>
+  <!-- Letter D -->
+  <path d="M185 210 
+           L185 330 
+           L235 330 
+           C295 330 315 300 315 270 
+           C315 240 295 210 235 210 Z"
+        fill="url(#silver)"/>
 
-  <path d="M315 190 C405 190 410 230 410 265 C410 300 405 340 315 340 L315 305 C375 305 380 285 380 265 C380 245 375 225 315 225 Z" 
-        fill="url(#silverSolid)"/>
+  <!-- Letter B -->
+  <path d="M305 210 
+           L305 330 
+           L345 330 
+           C385 330 400 305 400 285 
+           C400 265 385 250 360 245 
+           C385 240 400 220 400 205 
+           C400 185 380 170 345 170 
+           L305 170 Z
+
+           M340 255 
+           C360 255 370 265 370 280 
+           C370 295 360 305 340 305 
+           L330 305 
+           L330 255 Z"
+        fill="url(#silver)"/>
+
 </svg>
