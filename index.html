@@ -211,9 +211,29 @@
     });
 </script>
  
-    
+<button id="backToTop">↑</button>
+<script>
+// ეს კოდი აჩენს ღილაკს როცა ჩამოხვალ დაბლა და აჰყავს საიტი ზემოთ
+let topBtn = document.getElementById("backToTop");
+
+window.onscroll = function() {
+    // თუ ჩამოხვალ 400 პიქსელზე მეტს - ღილაკი გამოჩნდება
+    if (document.documentElement.scrollTop > 400) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
+
+topBtn.onclick = function() {
+    // რბილად აყვანა ზემოთ
+    window.scrollTo({top: 0, behavior: 'smooth'});
+};
+</script>
+ 
 </body>
 </html>
+
 
 
 
