@@ -7,9 +7,12 @@
     <title>D-BUILDER | Bauunternehmen</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        /* ფორმის ველებს შორის დაშორების დამატება */
+        /* ფორმის ველებს შორის და FAQ-სთან დაშორება */
+        #contact {
+            padding-top: 50px; /* FAQ-სგან დაშორება */
+        }
         .contact-form input, .contact-form textarea {
-            margin-bottom: 15px;
+            margin-bottom: 20px !important; /* ველებს შორის დაშორება */
             display: block;
             width: 100%;
         }
@@ -46,11 +49,11 @@
             <div class="services-grid">
                 <div class="card">
                     <h3>Innenrenovierung</h3>
-                    <p>Komplette Renovierungsarbeiten mit höchster Präzision und Langlebigkeit.</p>
+                    <p>Komplette Renovierungsarbeiten mit höchster Präზision und Langlebigkeit.</p>
                 </div>
                 <div class="card">
                     <h3>Badmodernisierung</h3>
-                    <p>Professionelle Installation und Design moderner Badezimmersysteme.</p>
+                    <p>Professionelle Installation und Design moderner Badeზimmersysteme.</p>
                 </div>
                 <div class="card">
                     <h3>Trockenbau & Malerarbeiten</h3>
@@ -96,7 +99,7 @@
                 <div class="feature-item">
                     <div class="icon">💼</div>
                     <h3>Professionelles Team</h3>
-                    <p>Erfahrene Handwerker, die Präzision in jede Renovierung bringen.</p>
+                    <p>Erfahrene Handwerker, die Präზision in jede Renovierung bringen.</p>
                 </div>
                 <div class="feature-item">
                     <div class="icon">💰</div>
@@ -124,7 +127,7 @@
                 <div class="step">
                     <span class="step-num">03</span>
                     <h3>Ausführung</h3>
-                    <p>Präzise Renovierungsarbeiten unter strenger Qualitätskontrolle.</p>
+                    <p>Präზise Renovierungsarbeiten unter strenger Qualitätskontrolle.</p>
                 </div>
                 <div class="step">
                     <span class="step-num">04</span>
@@ -160,7 +163,7 @@
                 <div class="faq-item">
                    <button class="faq-question">Wie lange dauert eine Komplettrenovierung?</button>
                    <div class="faq-answer">
-                        <p>Wir erstellen vor Beginn einen festen Zeitplan და ვაკონტროლებთ პროცესს ბოლომდე.</p>
+                        <p>Wir erstellen vor Beginn einen festen Zeitplan und garantieren die Einhaltung der Fristen.</p>
                    </div>
                </div>
             </div>
@@ -189,7 +192,6 @@
     <button id="backToTop" class="scroll-top-btn">↑</button>
 
     <script>
-        // FAQ Toggle
         const faqQuestions = document.querySelectorAll('.faq-question');
         faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
@@ -203,7 +205,6 @@
             });
         });
 
-        // Back to top
         let topBtn = document.getElementById("backToTop");
         window.onscroll = function() {
             if (document.documentElement.scrollTop > 400) {
