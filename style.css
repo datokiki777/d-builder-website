@@ -350,3 +350,44 @@ section {
     border-color: #ffc107; /* მაუსის მიტანისას ჩარჩო ყვითლდება */
     box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
 }
+
+/* --- Language Switcher --- */
+.navbar {
+    justify-content: space-around; /* ნავიგაციასა და ენებს შორის სივრცისთვის */
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.lang-switch a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lang-switch a:hover, .lang-switch a.active {
+    color: #ffc107; /* აქცენტის ფერი */
+}
+
+.lang-switch span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* მობილურზე რომ არ აირიოს */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .navbar ul {
+        gap: 15px;
+        margin-bottom: 5px;
+    }
+}
