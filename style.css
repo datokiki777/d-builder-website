@@ -18,25 +18,27 @@ body {
     margin: auto; 
 }
 
-/* მხოლოდ მენიუს ზოლის გაყინვა */
+/* 1. ნავიგაციის ზოლი - სულ ზემოთ */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #0d3d7a;
-    padding: 15px 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.1); /* შენი ნახსენები ღია ზოლი */
+    height: 60px; /* ფიქსირებული სიმაღლე */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
     gap: 30px;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 .navbar a {
@@ -44,40 +46,33 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
-/* Hero სექციის გასწორება (ლოგო და მთავარი ტექსტი) */
+/* 2. ჰერო სექცია - ლოგო და ტექსტი */
 .hero-section {
-    padding-top: 120px; /* მენიუს სიმაღლის ადგილი */
     background-color: #0d3d7a;
-    text-align: center;
     color: white;
-    padding-bottom: 50px;
-}
-
-/* რომ საიტის დანარჩენი ნაწილი მენიუს ქვეშ არ მოექცეს */
-body {
+    text-align: center;
+    /* აქ არის მთავარი: ზემოდან ვუტოვებთ ადგილს, რომ მენიუმ არ გადაფაროს */
+    padding: 100px 20px 60px 20px; 
     margin: 0;
-    padding: 0;
 }
 
-
-.logo { 
-    width: 100px; 
-    margin: 0 auto 20px; 
+.hero-section img {
+    width: 80px; /* ლოგოს ზომა */
+    margin-bottom: 20px;
 }
 
-h1 { 
-    font-size: 42px; 
-    font-weight: 800; 
-    letter-spacing: 1px; 
-    margin-bottom: 10px; 
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.hero-text { 
-    color: #d1d8e0; 
-    font-size: 18px; 
-    margin-bottom: 30px; 
+/* 3. კონტეინერის გასწორება */
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* ღილაკი */
@@ -401,6 +396,7 @@ body {
 #backToTop:hover {
     background-color: #e5ac00; /* მაუსის მიტანისას ფერი */
 }
+
 
 
 
