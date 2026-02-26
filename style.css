@@ -18,13 +18,49 @@ body {
     margin: auto; 
 }
 
-/* Header - მუქი ლურჯი */
-header { 
-    background-color: #0d3d7a; 
-    padding: 60px 0; 
-    text-align: center; 
-    color: #ffffff; 
+/* მხოლოდ მენიუს ზოლის გაყინვა */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d3d7a;
+    padding: 15px 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1); /* შენი ნახსენები ღია ზოლი */
 }
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Hero სექციის გასწორება (ლოგო და მთავარი ტექსტი) */
+.hero-section {
+    padding-top: 120px; /* მენიუს სიმაღლის ადგილი */
+    background-color: #0d3d7a;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* რომ საიტის დანარჩენი ნაწილი მენიუს ქვეშ არ მოექცეს */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 .logo { 
     width: 100px; 
@@ -365,5 +401,6 @@ body {
 #backToTop:hover {
     background-color: #e5ac00; /* მაუსის მიტანისას ფერი */
 }
+
 
 
