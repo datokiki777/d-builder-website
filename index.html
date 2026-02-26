@@ -7,24 +7,26 @@
     <title>D-BUILDER | Construction Company</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero-section">
-        <img src="logo.png" alt="Logo">
-        <h1>D-BUILDER</h1>
-        <p>Professional Construction & Renovation Services Across the EU</p>
-        <a href="#contact" class="quote-btn">Request a Quote</a>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <img src="logo.png" alt="Logo">
+                <h1>D-BUILDER</h1>
+                <p>Professional Construction & Renovation Services Across the EU</p>
+                <a href="#contact" class="btn">Request a Quote</a>
+            </div>
+        </div>
     </header>
-        
+
     <section id="services">
         <div class="container">
             <h2>Our Services</h2>
@@ -64,82 +66,6 @@
         </div>
     </section>
 
-    <section class="why-us">
-        <div class="container">
-            <h2>Why Choose D-BUILDER?</h2>
-            <div class="features">
-                <div class="feature-item">
-                    <div class="icon">🏆</div>
-                    <h3>Quality Guarantee</h3>
-                    <p>We follow strict EU construction standards to ensure lasting results.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="icon">📅</div>
-                    <h3>On-Time Delivery</h3>
-                    <p>We value your time. Our team works efficiently to meet all deadlines.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="icon">💼</div>
-                    <h3>Professional Team</h3>
-                    <p>Experienced craftsmen bringing precision to your renovation.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="icon">💰</div>
-                    <h3>Clear Pricing</h3>
-                    <p>No hidden costs. Detailed and transparent quotes for your peace of mind.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="process">
-        <div class="container">
-            <h2>Our Professional Process</h2>
-            <div class="process-steps">
-                <div class="step">
-                    <span>01</span>
-                    <h3>Consultation</h3>
-                    <p>Establishing a clear vision and conducting a thorough technical assessment.</p>
-                </div>
-                <div class="step">
-                    <span>02</span>
-                    <h3>Strategic Planning</h3>
-                    <p>Detailed budgeting, material selection, and timeline establishment.</p>
-                </div>
-                <div class="step">
-                    <span>03</span>
-                    <h3>Execution</h3>
-                    <p>Precise renovation work carried out under strict quality control.</p>
-                </div>
-                <div class="step">
-                    <span>04</span>
-                    <h3>Final Delivery</h3>
-                    <p>Thorough inspection and project handover, ensuring full compliance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-        
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>General Inquiries</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">Where does D-BUILDER provide its services?</button>
-                    <div class="faq-answer">
-                        <p>We operate primarily in Latvia, Germany, and the Netherlands.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">How is the project estimation handled?</button>
-                    <div class="faq-answer">
-                        <p>Our experts conduct a thorough evaluation followed by a fixed-price quote.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
@@ -159,21 +85,7 @@
     <button id="backToTop">↑</button>
 
     <script>
-        // FAQ Accordion
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                question.classList.toggle('active');
-                const answer = question.nextElementSibling;
-                if (question.classList.contains('active')) {
-                    answer.style.maxHeight = answer.scrollHeight + "px";
-                } else {
-                    answer.style.maxHeight = 0;
-                }
-            });
-        });
-
-        // Back to Top Button
+        // Back to Top Logic
         let topBtn = document.getElementById("backToTop");
         window.onscroll = function() {
             if (document.documentElement.scrollTop > 400) {
@@ -186,6 +98,6 @@
             window.scrollTo({top: 0, behavior: 'smooth'});
         };
     </script>
- 
+
 </body>
 </html>
