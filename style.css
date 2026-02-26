@@ -274,13 +274,21 @@ section {
     gap: 15px;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     width: 100%;
+    display: block; /* აი ეს დასვამს ველებს ერთმანეთის ქვეშ */
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
+    box-sizing: border-box; /* რომ პედინგმა სიგანე არ გაზარდოს */
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
 }
 
 .submit-btn {
@@ -317,5 +325,6 @@ section {
     font-size: 14px;
     opacity: 0.8;
 }
+
 
 
