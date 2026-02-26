@@ -3,72 +3,24 @@
   <!-- Background Circle -->
   <circle cx="256" cy="256" r="230" fill="#0D3B66"/>
 
-  <defs>
-    <!-- Metallic gradient -->
-    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D1D5DB"/>
-      <stop offset="50%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#9CA3AF"/>
-    </linearGradient>
-
-    <!-- Shine effect -->
-    <radialGradient id="shine" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="white" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="white" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Modern Shield -->
+  <!-- Shield Shape (minimal) -->
   <path d="
-    M180 110
-    L332 110
+    M180 120
+    L332 120
     L332 340
     Q332 370 300 390
     L256 440
     L212 390
     Q180 370 180 340
     Z"
-    fill="none"
-    stroke="url(#metal)"
-    stroke-width="24"
+    fill="#1B6CA8"
+    stroke="#FFFFFF"
+    stroke-width="8"
     stroke-linejoin="round"
   />
 
-  <!-- Letter D (small) -->
-  <path d="
-    M190 220
-    L190 320
-    L225 320
-    C270 320 285 295 285 270
-    C285 245 270 220 225 220
-    Z"
-    fill="url(#metal)"
-  />
-
-  <!-- Letter B (big, flat front) -->
-  <path d="
-    M290 180
-    L290 340
-    L340 340
-    C385 340 400 315 400 285
-    C400 260 385 240 360 235
-    C385 230 400 210 400 185
-    C400 160 375 140 340 140
-    L290 140
-    Z
-
-    M320 250
-    C355 250 370 265 370 285
-    C370 305 355 320 320 320
-    L310 320
-    L310 250
-    Z"
-    fill="url(#metal)"
-  />
-
-  <!-- Shine highlights -->
-  <circle cx="240" cy="180" r="8" fill="url(#shine)"/>
-  <circle cx="300" cy="140" r="6" fill="url(#shine)"/>
-  <circle cx="360" cy="180" r="6" fill="url(#shine)"/>
+  <!-- Simple Shine -->
+  <circle cx="280" cy="180" r="10" fill="white" opacity="0.2"/>
+  <circle cx="220" cy="220" r="6" fill="white" opacity="0.15"/>
 
 </svg>
