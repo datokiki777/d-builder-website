@@ -331,4 +331,39 @@ section {
 }
 
 
+/* --- მენიუს გაყინვის სტილი --- */
+header {
+    position: fixed; /* მენიუ დარჩება ეკრანზე სქროლვისას */
+    top: 0;
+    width: 100%;
+    z-index: 1000;   /* რომ სხვა ყველაფერზე ზემოთ იყოს */
+    background: #0d3d7a; 
+}
+
+body {
+    padding-top: 80px; /* ეს სიცარიელეა, რომ საიტის დასაწყისი მენიუს ქვეშ არ შევიდეს */
+}
+
+/* --- ზემოთ ასვლის ღილაკის სტილი --- */
+#backToTop {
+    display: none;    /* თავიდან დამალულია */
+    position: fixed;
+    bottom: 25px;     /* ქვემოდან დაშორება */
+    right: 25px;      /* მარჯვნიდან დაშორება */
+    z-index: 1001;
+    border: none;
+    background-color: #ffc107; /* შენი ყვითელი ფერი */
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* მრგვალი ფორმა */
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#backToTop:hover {
+    background-color: #e5ac00; /* მაუსის მიტანისას ფერი */
+}
+
 
