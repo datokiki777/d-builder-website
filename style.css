@@ -391,3 +391,14 @@ section {
         margin-bottom: 5px;
     }
 }
+
+.service-card img {
+    width: 100%;
+    max-width: 250px; /* შეგიძლია შეცვალო ზომა სურვილისამებრ */
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
