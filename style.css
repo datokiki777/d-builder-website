@@ -75,11 +75,10 @@ html {
     font-size: 1.1rem;
     font-weight: 300;
     max-width: 600px;
-    margin: 0 auto 50px; /* აქ გავზარდეთ დაშორება ქვემოთ 50 პიქსელამდე */
+    margin: 0 auto 50px;
     opacity: 0.9;
-    line-height: 1.5; /* ხაზებს შორის დაშორება, რომ არ შეიკუმშოს */
+    line-height: 1.5;
 }
-
 
 
 .main-logo {
@@ -350,4 +349,5 @@ h2 {
         text-align: center;
     }
 }
+
 
