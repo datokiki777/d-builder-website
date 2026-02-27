@@ -181,32 +181,39 @@
     <button id="backToTop" class="scroll-top-btn">↑</button>
 
     <script>
+    document.addEventListener('DOMContentLoaded', () => {
         const faqQuestions = document.querySelectorAll('.faq-question');
+        
         faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
                 question.classList.toggle('active');
                 const answer = question.nextElementSibling;
+                
                 if (question.classList.contains('active')) {
                     answer.style.maxHeight = answer.scrollHeight + "px";
                 } else {
-                    answer.style.maxHeight = 0;
+                    answer.style.maxHeight = "0px";
                 }
             });
         });
+    });
 
-        let topBtn = document.getElementById("backToTop");
-        window.onscroll = function() {
-            if (document.documentElement.scrollTop > 400) {
-                topBtn.style.visibility = "visible";
-                topBtn.style.opacity = "1";
-            } else {
-                topBtn.style.visibility = "hidden";
-                topBtn.style.opacity = "0";
-            }
-        };
-        topBtn.onclick = function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        };
-    </script>
+    // Back to top ფუნქცია (რომელიც ასევე გაქვს კოდში)
+    let topBtn = document.getElementById("backToTop");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            topBtn.style.visibility = "visible";
+            topBtn.style.opacity = "1";
+        } else {
+            topBtn.style.visibility = "hidden";
+            topBtn.style.opacity = "0";
+        }
+    };
+    topBtn.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+
 </body>
 </html>
+
