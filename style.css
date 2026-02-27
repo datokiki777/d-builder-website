@@ -71,12 +71,16 @@ html {
 }
 
 /* --- Hero Section & Main Logo --- */
-.hero-section {
-    background-color: #0d3d7a;
-    color: white;
-    text-align: center;
-    padding: 160px 20px 100px 20px;
+.hero-section p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 50px; /* აქ გავზარდეთ დაშორება ქვემოთ 50 პიქსელამდე */
+    opacity: 0.9;
+    line-height: 1.5; /* ხაზებს შორის დაშორება, რომ არ შეიკუმშოს */
 }
+
+
 
 .main-logo {
     width: 125px;
@@ -346,3 +350,4 @@ h2 {
         text-align: center;
     }
 }
+
