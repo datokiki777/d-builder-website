@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>D-BUILDER | Renovierung, Innenausbau & Bauunternehmen</title>
-    <meta name="description" content="SIA D-BUILDER: Professionelle Hausrenovierung, Innenausbau und Bauleistungen nach EU-Standards in Deutschland, Lettland und den Niederlanden.">
-    <meta name="keywords" content="Bauunternehmen, Renovierung, Innenausbau, Badezimmersanierung, Trockenbau, Malerarbeiten, D-BUILDER, Europa Bau">
-
-    <link rel="stylesheet" href="style.css">
+    <title>D-BUILDER | Bauunternehmen</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* ფორმის ველებს შორის და FAQ-სთან დაშორება */
+        #contact {
+            padding-top: 50px; /* FAQ-სგან დაშორება */
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 20px !important; /* ველებს შორის დაშორება */
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +24,7 @@
     <nav class="navbar">
         <ul>
             <li><a href="#services">LEISTUNGEN</a></li>
-            <li><a href="#about">UBER UNS</a></li>
+            <li><a href="#about">ÜBER UNS</a></li>
             <li><a href="#contact">KONTAKT</a></li>
         </ul>
         <div class="lang-switch">
@@ -37,48 +44,51 @@
     </header>
         
     <section id="services">
-        <h2>Unsere Dienstleistungen</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <img src="renovation.webp" alt="Innenrenovierung">
-                <h3>Innenrenovierung</h3>
-                <p>Professionelle Innenarchitektur und Renovierung fur Ihr modernes Zuhause.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="bathroom.webp" alt="Badezimmerinstallation">
-                <h3>Badezimmerinstallation</h3>
-                <p>Hochwertiges Bad-Design und erstklassige Sanitarinstallationen.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="painting.webp" alt="Trockenbau & Malerei">
-                <h3>Trockenbau & Malerei</h3>
-                <p>Fachgerechte Trockenbauarbeiten und professionelle Malerarbeiten.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="construction.webp" alt="Allgemeiner Bau">
-                <h3>Allgemeiner Bau</h3>
-                <p>Komplette Bau- und Konstruktionslosungen nach EU-Standards.</p>
-            </div>
+    <h2>Unsere Dienstleistungen</h2>
+    <div class="services-container">
+        
+        <div class="service-card">
+            <img src="renovation.webp" alt="Innenrenovierung" style="width:100%; border-radius:10px;">
+            <h3>Innenrenovierung</h3>
+            <p>Professionelle Innenarchitektur und Renovierung für Ihr Zuhause.</p>
         </div>
-    </section>
+
+        <div class="service-card">
+            <img src="bathroom.webp" alt="Badezimmerinstallation" style="width:100%; border-radius:10px;">
+            <h3>Badezimmerinstallation</h3>
+            <p>Hochwertiges Bad-Design und Sanitärinstallationen.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="painting.webp" alt="Trockenbau & Malerei" style="width:100%; border-radius:10px;">
+            <h3>Trockenbau & Malerei</h3>
+            <p>Fachgerechte Trockenbauarbeiten und professionelle Malerarbeiten.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="construction.webp" alt="Allgemeiner Bau" style="width:100%; border-radius:10px;">
+            <h3>Allgemeiner Bau</h3>
+            <p>Komplette Bau- und Konstruktionslösungen.</p>
+        </div>
+
+    </div>
+</section>
+
 
     <section id="about" class="about-section">
         <div class="container">
-            <h2>Uber D-BUILDER</h2>
-            <div class="about-text zigzag-text">
+            <h2>Über D-BUILDER</h2>
+            <div class="about-text">
                 <p>SIA D-BUILDER ist ein eingetragenes lettisches Bauunternehmen, das professionelle Bau- und Renovierungsdienstleistungen in ganz Europa anbietet.</p>
-                <p>Wir garantieren hochste Prazision, Qualitat und die strikte Einhaltung aller europaischen Sicherheitsvorschriften.</p>
             </div>
-            <div class="company-card">
-                <p class="company-name">SIA D-BUILDER</p>
-                <p><strong>Reg.-Nr.:</strong> 40203480659</p>
-                <p><strong>Adresse:</strong> Mirdzas Kempes iela 11–34, Riga, LV-1014</p>
-                <p><strong>E-Mail:</strong> dbuilder.team@gmail.com</p>
-                <p><strong>Tel.:</strong> +371 28601141</p>
+               <div class="company-card">
+                  <p class="company-name">SIA D-BUILDER</p>
+                  <p><strong>Reg.-Nr.:</strong> 40203480659</p>
+                  <p><strong>Adresse:</strong> Mirdzas Ķempes iela 11–34, Rīga, LV-1014</p>
+                  <p><strong>E-Mail:</strong> dbuilder.team@gmail.com</p>
+                  <p><strong>Tel.:</strong> +371 28601141</p>
             </div>
+
         </div>
     </section>
 
@@ -88,23 +98,23 @@
             <div class="features-grid">
                 <div class="feature-item">
                     <div class="icon">🏆</div>
-                    <h3>Qualitatsgarantie</h3>
-                    <p>Wir halten uns an strenge EU-Baustandards fur nachhaltige Ergebnisse.</p>
+                    <h3>Qualitätsgarantie</h3>
+                    <p>Wir halten uns an strenge EU-Baustandards für nachhaltige Ergebnisse.</p>
                 </div>
                 <div class="feature-item">
                     <div class="icon">📅</div>
                     <h3>Termintreue</h3>
-                    <p>Wir arbeiten effizient, um alle vereinbarten Fristen punktlich einzuhalten.</p>
+                    <p>Wir schätzen Ihre Zeit und arbeiten effizient, um alle Fristen einzuhalten.</p>
                 </div>
                 <div class="feature-item">
                     <div class="icon">💼</div>
-                    <h3>Profi-Team</h3>
-                    <p>Erfahrene Handwerker sorgen fur hochste Prazision bei jeder Renovierung.</p>
+                    <h3>Professionelles Team</h3>
+                    <p>Erfahrene Handwerker, die Präზision in jede Renovierung bringen.</p>
                 </div>
                 <div class="feature-item">
                     <div class="icon">💰</div>
-                    <h3>Klare Preise</h3>
-                    <p>Keine versteckten Kosten. Detaillierte und transparente Angebote fur Sie.</p>
+                    <h3>Klare Preisgestaltung</h3>
+                    <p>Keine versteckten Kosten. Detaillierte und transparente Angebote.</p>
                 </div>
             </div>
         </div>
@@ -112,12 +122,12 @@
 
     <section class="process">
         <div class="container">
-            <h2>Unser Prozess</h2>
+            <h2>Unser professioneller Prozess</h2>
             <div class="process-steps">
                 <div class="step">
                     <span class="step-num">01</span>
                     <h3>Beratung</h3>
-                    <p>Erstellung einer Vision und Durchfuhrung einer technischen Bewertung vor Ort.</p>
+                    <p>Erstellung einer klaren Vision und Durchführung einer technischen Bewertung.</p>
                 </div>
                 <div class="step">
                     <span class="step-num">02</span>
@@ -126,13 +136,13 @@
                 </div>
                 <div class="step">
                     <span class="step-num">03</span>
-                    <h3>Ausfuhrung</h3>
-                    <p>Prazise Renovierungsarbeiten unter standiger Qualitatskontrolle.</p>
+                    <h3>Ausführung</h3>
+                    <p>Präზise Renovierungsarbeiten unter strenger Qualitätskontrolle.</p>
                 </div>
                 <div class="step">
                     <span class="step-num">04</span>
-                    <h3>Ubergabe</h3>
-                    <p>Grundliche Inspektion und schlusselfertige Ubergabe Ihres Projekts.</p>
+                    <h3>Übergabe</h3>
+                    <p>Gründliche Inspektion und Projektabschluss gemäß aller Standards.</p>
                 </div>
             </div>
         </div>
@@ -140,20 +150,32 @@
         
     <section class="faq" id="faq">
         <div class="container">
-            <h2>Haufig gestellte Fragen</h2>
+            <h2>Häufig gestellte Fragen</h2>
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question">Wo bietet D-BUILDER Leistungen an?</button>
+                    <button class="faq-question">Wo bietet D-BUILDER seine Leistungen an?</button>
                     <div class="faq-answer">
-                        <p>Wir sind hauptsachlich in <strong>Lettland, Deutschland und den Niederlanden</strong> sowie EU-weit tatig.</p>
+                        <p>Wir sind hauptsächlich in <strong>Lettland, Deutschland und den Niederlanden</strong> tätig.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Wie erfolgt die Kostenschatzung?</button>
+                    <button class="faq-question">Wie erfolgt die Projektschätzung?</button>
                     <div class="faq-answer">
-                        <p>Nach einer technischen Bewertung erhalten Sie von uns ein Festpreisangebot.</p>
+                        <p>Unsere Experten führen eine technische Bewertung durch, gefolgt von einem Festpreisangebot.</p>
                     </div>
                 </div>
+                <div class="faq-item">
+                    <button class="faq-question">Entspricht Ihr Unternehmen den EU-Sicherheitsstandards?</button>
+                    <div class="faq-answer">
+                        <p>Jedes von SIA D-BUILDER verwaltete Projekt entspricht strikt den europäischen Bauvorschriften.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                   <button class="faq-question">Wie lange dauert eine Komplettrenovierung?</button>
+                   <div class="faq-answer">
+                        <p>Wir erstellen vor Beginn einen festen Zeitplan und garantieren die Einhaltung der Fristen.</p>
+                   </div>
+               </div>
             </div>
         </div>
     </section>
@@ -162,45 +184,40 @@
         <div class="container">
             <h2>Kontaktieren Sie uns</h2>
             <form class="contact-form" action="https://formsubmit.co/dbuilder.team@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://dbuilder.eu/de.html">
+                <input type="hidden" name="_next" value="https://datokiki777.github.io/d-builder-website/de.html">
                 <input type="hidden" name="_captcha" value="false">
                 
                 <input type="text" name="name" placeholder="Ihr Name" required>
                 <input type="email" name="email" placeholder="Ihre E-Mail" required>
-                <textarea name="message" placeholder="Projektdetails (z.B. Renovierung in Berlin)..." required></textarea>
+                <textarea name="message" placeholder="Projektdetails..." required></textarea>
                 <button type="submit" class="submit-btn">Nachricht senden</button>
             </form>
         </div>
     </section>
 
     <footer class="main-footer">
-        <p>&copy; 2026 SIA D-BUILDER. Alle Rechte vorbehalten.</p>
+        <p>© 2026 SIA D-BUILDER. Alle Rechte vorbehalten.</p>
     </footer>
 
-    <button id="backToTop" class="scroll-top-btn">&uarr;</button>
+    <button id="backToTop" class="scroll-top-btn">↑</button>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // FAQ Functionality
         const faqQuestions = document.querySelectorAll('.faq-question');
-        
         faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
                 question.classList.toggle('active');
                 const answer = question.nextElementSibling;
-                
                 if (question.classList.contains('active')) {
                     answer.style.maxHeight = answer.scrollHeight + "px";
                 } else {
-                    answer.style.maxHeight = "0px";
+                    answer.style.maxHeight = 0;
                 }
             });
         });
 
-        // Back to top functionality
-        const topBtn = document.getElementById("backToTop");
+        let topBtn = document.getElementById("backToTop");
         window.onscroll = function() {
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            if (document.documentElement.scrollTop > 400) {
                 topBtn.style.visibility = "visible";
                 topBtn.style.opacity = "1";
             } else {
@@ -211,8 +228,8 @@
         topBtn.onclick = function() {
             window.scrollTo({top: 0, behavior: 'smooth'});
         };
-    });
-</script>
-
+    </script>
+ 
 </body>
 </html>
+
