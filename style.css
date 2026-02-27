@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fcfcfc;
-    color: #444;
+    color: #444; /* Soft grey instead of pure black */
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* --- Navigation & Language Switcher --- */
+/* --- Navigation --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -26,51 +26,32 @@ html {
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     z-index: 10000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+    }
 
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
 
-.navbar ul li a:hover {
-    color: #ffc107;
-}
+        .navbar ul li a:hover {
+            color: #ffc107;
+        }
 
-.lang-switch {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.lang-switch a {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.lang-switch a:hover, .lang-switch a.active {
-    color: #ffc107;
-}
-
-/* --- Hero Section & Branding --- */
+/* --- Hero Section --- */
 .hero-section {
     background-color: #0d3d7a;
     color: white;
@@ -78,54 +59,61 @@ html {
     padding: 160px 20px 100px 20px;
 }
 
-.main-logo {
-    width: 125px;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
-    border: 2.5px solid rgba(255, 255, 255, 0.3); 
-    border-radius: 22px;
-    padding: 5px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    background-color: rgba(13, 61, 122, 0.5);
+    .hero-section img {
+        width: 100px;
+        margin-bottom: 25px;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+        letter-spacing: -1px;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+        font-weight: 300;
+        max-width: 600px;
+        margin: 0 auto 35px;
+        opacity: 0.9;
+    }
+
+/* --- Buttons --- */
+.quote-btn, .submit-btn {
+    background: #ffc107;
+    color: #0d3d7a;
+    padding: 12px 30px;
+    border-radius: 5px; /* Rounded pill shape */
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
 }
 
-.main-logo:hover {
-    transform: scale(1.08);
-    border-color: #ffc107;
-}
+    .quote-btn:hover, .submit-btn:hover {
+        background: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
 
-.hero-section h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 15px;
-    letter-spacing: -1px;
-}
-
-.hero-section p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    max-width: 600px;
-    margin: 0 auto 50px; /* Space for the button */
-    opacity: 0.9;
-    line-height: 1.5;
-}
-
-/* --- Services Grid --- */
+/* --- Services --- */
 section {
     padding: 100px 20px;
 }
 
-h2 {
-    font-size: 32px;
-    text-align: center;
-    color: #0d3d7a;
-    margin-bottom: 50px;
-    font-weight: 800;
-}
+    h2 {
+        font-size: 32px;
+        text-align: center;
+        color: #0d3d7a;
+        margin-bottom: 50px;
+        font-weight: 800;
+    }
 
-.services-container {
+.services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
@@ -133,97 +121,90 @@ h2 {
     margin: 0 auto;
 }
 
-.service-card {
-    background: #fff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    transition: 0.4s;
-    border-top: 5px solid #ffc107;
-    text-align: center;
-}
+    .card {
+        background: #fff;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        transition: 0.4s;
+        border-top: 5px solid #ffc107;
+    }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-}
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
 
-.service-card img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
+        .card h3 {
+            color: #0d3d7a;
+            margin-bottom: 15px;
+        }
 
-/* --- About Section & Zigzag Layout --- */
+/* --- About Section --- */
 .about-section {
     background-color: #f4f7fa;
 }
 
-.about-text {
-    max-width: 800px;
-    margin: 0 auto 40px;
-}
+    .about-text {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 40px;
+        font-size: 1.1rem;
+        color: #555;
+    }
 
-.about-text p {
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    padding: 15px 25px;
-}
+    .company-card {
+        background: #fff;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
 
-.about-text p:nth-child(even) {
-    border-left: 4px solid #ffc107;
-    margin-left: 20px;
-}
+        .company-name {
+            font-weight: 800;
+            color: #0d3d7a;
+            font-size: 1.2rem;
+        }
 
-.about-text p:nth-child(odd) {
-    border-right: 4px solid #0d3d7a;
-    margin-right: 20px;
-    text-align: left;
-}
-
-.company-card {
-    background: #fff;
-    max-width: 500px;
-    margin: 40px auto 0;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.company-name {
-    font-weight: 800;
-    color: #0d3d7a;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-/* --- Features & Process Steps --- */
-.features-grid, .process-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
+/* --- FAQ & Contact --- */
+.faq-list {
+    max-width: 700px;
     margin: 0 auto;
 }
 
-.feature-item, .step {
-    padding: 20px;
-    text-align: center;
+    .faq-item {
+        margin-bottom: 15px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.step-num {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #ffc107;
-    opacity: 0.5;
-    display: block;
-    margin-bottom: 10px;
-}
+    .contact-form input, .contact-form textarea {
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 1px solid #e1e1e1;
+        background-color: #fff;
+        font-family: inherit;
+        transition: 0.3s;
+    }
 
-/* --- FAQ Accordion --- */
+    .contact-form input:focus, .contact-form textarea:focus {
+        border-color: #ffc107;
+        outline: none;
+    }
+
+/* FAQ Styling */
 .faq-list {
     max-width: 800px;
     margin: 0 auto;
@@ -250,26 +231,41 @@ h2 {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    transition: background 0.3s;
+    align-items: center;
+    transition: 0.3s;
 }
 
 .faq-question:hover {
     background: #fcfcfc;
 }
 
+.faq-question::after {
+    content: '+';
+    font-size: 20px;
+    color: #ffc107;
+    transition: 0.3s;
+}
+
+.faq-question.active::after {
+    content: '−';
+    transform: rotate(180deg);
+}
+
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: all 0.4s ease-in-out;
     background: #f9fbff;
 }
 
 .faq-answer p {
     padding: 20px 25px;
+    color: #555;
+    line-height: 1.6;
     border-top: 1px solid #f0f0f0;
 }
 
-/* --- Contact Form & Buttons --- */
+/* Contact Form Fix (ბოლო სქრინშოტისთვის) */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
@@ -278,53 +274,30 @@ h2 {
     gap: 15px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
+    display: block; /* აი ეს დასვამს ველებს ერთმანეთის ქვეშ */
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
-    font-family: inherit;
+    box-sizing: border-box; /* რომ პედინგმა სიგანე არ გაზარდოს */
+    font-family: 'Poppins', sans-serif;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-    border-color: #ffc107;
-    outline: none;
-}
-
-.quote-btn, .submit-btn {
-    background: #ffc107;
-    color: #0d3d7a;
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
 }
 
 .submit-btn {
-    width: 100%;
-    margin-top: 10px;
+    width: 100%; /* ღილაკი რომ გაიჭიმოს და ლამაზი იყოს */
+    padding: 15px;
 }
 
-.quote-btn:hover, .submit-btn:hover {
-    background: #0d3d7a;
-    color: #fff;
-    transform: translateY(-3px);
-}
 
-/* --- Footer & Scroll Button --- */
-.main-footer {
-    background: #0d3d7a;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
+/* --- Scroll Top --- */
 .scroll-top-btn {
     position: fixed;
     bottom: 30px;
@@ -334,47 +307,98 @@ h2 {
     background: #ffc107;
     border: none;
     border-radius: 50%;
-    z-index: 9999;
-    transition: 0.4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #0d3d7a;
+    font-size: 20px;
     cursor: pointer;
-    visibility: hidden;
+    z-index: 9999;
     opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
 }
 
-/* --- Mobile Responsiveness --- */
-@media (max-width: 768px) {
+/* --- Footer --- */
+.main-footer {
+    background: #0d3d7a;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* --- New Logo Styles --- */
+.main-logo {
+    width: 125px; /* ზომა გაზრდილია (იყო 100px) */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    
+    /* თეთრი ნაზი ჩარჩო */
+    border: 2.5px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 22px; /* SVG-ს კუთხეებს რომ მოერგოს */
+    padding: 5px; /* სივრცე ჩარჩოსა და ლოგოს შორის */
+    
+    /* ჩრდილი უკეთესი გამოკვეთისთვის */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    
+    transition: all 0.3s ease;
+    background-color: rgba(13, 61, 122, 0.5); /* დამატებითი სიღრმე */
+}
+
+.main-logo:hover {
+    transform: scale(1.08);
+    border-color: #ffc107; /* მაუსის მიტანისას ჩარჩო ყვითლდება */
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Language Switcher --- */
+.navbar {
+    justify-content: space-around; /* ნავიგაციასა და ენებს შორის სივრცისთვის */
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.lang-switch a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lang-switch a:hover, .lang-switch a.active {
+    color: #ffc107; /* აქცენტის ფერი */
+}
+
+.lang-switch span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* მობილურზე რომ არ აირიოს */
+@media (max-width: 600px) {
     .navbar {
+        flex-direction: column;
         height: auto;
-        padding: 15px 0;
+        padding: 10px 0;
     }
-    
     .navbar ul {
-        gap: 20px;
-        margin-bottom: 10px;
+        gap: 15px;
+        margin-bottom: 5px;
     }
+}
 
-    .hero-section {
-        padding: 140px 20px 80px 20px;
-    }
-
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
-
-    .about-text p:nth-child(even), 
-    .about-text p:nth-child(odd) {
-        margin: 0 0 15px 0;
-        padding: 15px;
-        border: none;
-        text-align: center;
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-    }
-    
-    section {
-        padding: 60px 20px;
-    }
+.service-card img {
+    width: 100%;
+    max-width: 250px; /* შეგიძლია შეცვალო ზომა სურვილისამებრ */
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
