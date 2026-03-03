@@ -1,283 +1,158 @@
 <!DOCTYPE html>
 <html lang="de">
 
+<!-- =====================================================
+     D-BUILDER | Deutsche Version (DE)
+===================================================== -->
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D-BUILDER | Bauunternehmen</title>
 
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-    <style>
-        #contact {
-            padding-top: 50px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            margin-bottom: 20px !important;
-            display: block;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#services">LEISTUNGEN</a></li>
-            <li><a href="#about">ÜBER UNS</a></li>
-            <li><a href="#contact">KONTAKT</a></li>
-        </ul>
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#services">LEISTUNGEN</a></li>
+        <li><a href="#about">ÜBER UNS</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
+    </ul>
 
-        <div class="lang-switch">
-            <a href="index.html">EN</a>
-            <span>|</span>
-            <a href="de.html" class="active">DE</a>
+    <div class="lang-switch">
+        <a href="index.html">EN</a>
+        <span>|</span>
+        <a href="de.html" class="active">DE</a>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero-section" id="home">
+    <div class="hero-content">
+        <img src="logo.svg" alt="D-Builder Logo" class="main-logo">
+        <h1>D-BUILDER</h1>
+        <p>Professionelle Bau- und Renovierungsarbeiten in der EU</p>
+        <a href="#contact" class="quote-btn">Angebot anfragen</a>
+    </div>
+</header>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+    <h2>Unsere Leistungen</h2>
+
+    <div class="services-container">
+        <div class="service-card">
+            <img src="renovation.webp" alt="Innenrenovierung" loading="lazy">
+            <h3>Innenrenovierung</h3>
+            <p>Professionelle Innenraumgestaltung und Renovierung.</p>
         </div>
-    </nav>
 
-    <header class="hero-section">
-        <div class="hero-content">
-            <img src="logo.svg" alt="D-BUILDER Logo" class="main-logo">
-            <h1>D-BUILDER</h1>
-            <p>Professionelle Bau- und Renovierungsdienstleistungen in der gesamten EU</p>
-            <a href="#contact" class="quote-btn">Angebot anfordern</a>
+        <div class="service-card">
+            <img src="bathroom.webp" alt="Badinstallation" loading="lazy">
+            <h3>Badinstallation</h3>
+            <p>Hochwertige Badgestaltung und Sanitärarbeiten.</p>
         </div>
-    </header>
 
-    <section id="services">
-        <h2>Unsere Dienstleistungen</h2>
-
-        <div class="services-container">
-
-            <div class="service-card">
-                <img src="renovation.webp" alt="Innenrenovierung" loading="lazy">
-                <h3>Innenrenovierung</h3>
-                <p>Professionelle Innenarchitektur und Renovierung für Ihr Zuhause.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="bathroom.webp" alt="Badezimmerinstallation" loading="lazy">
-                <h3>Badezimmerinstallation</h3>
-                <p>Hochwertiges Bad-Design und Sanitärinstallationen.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="painting.webp" alt="Trockenbau & Malerei" loading="lazy">
-                <h3>Trockenbau & Malerei</h3>
-                <p>Fachgerechte Trockenbauarbeiten und professionelle Malerarbeiten.</p>
-            </div>
-
-            <div class="service-card">
-                <img src="construction.webp" alt="Allgemeiner Bau" loading="lazy">
-                <h3>Allgemeiner Bau</h3>
-                <p>Komplette Bau- und Konstruktionslösungen.</p>
-            </div>
-
+        <div class="service-card">
+            <img src="painting.webp" alt="Trockenbau und Malerarbeiten" loading="lazy">
+            <h3>Trockenbau &amp; Malerarbeiten</h3>
+            <p>Fachgerechter Trockenbau und professionelle Malerarbeiten.</p>
         </div>
-    </section>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>Über D-BUILDER</h2>
-
-            <div class="about-text">
-                <p>
-                    SIA D-BUILDER ist ein eingetragenes lettisches Bauunternehmen,
-                    das professionelle Bau- und Renovierungsdienstleistungen in ganz Europa anbietet.
-                </p>
-            </div>
-
-            <div class="company-card">
-                <p class="company-name">SIA D-BUILDER</p>
-                <p><strong>Reg.-Nr.:</strong> 40203480659</p>
-                <p><strong>Adresse:</strong> Mirdzas Ķempes iela 11–34, Rīga, LV-1014</p>
-                <p><strong>E-Mail:</strong> dbuilder.team@gmail.com</p>
-                <p><strong>Tel.:</strong> +371 28601141</p>
-            </div>
+        <div class="service-card">
+            <img src="construction.webp" alt="Allgemeine Bauarbeiten" loading="lazy">
+            <h3>Allgemeine Bauarbeiten</h3>
+            <p>Komplette Bau- und Renovierungslösungen aus einer Hand.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="why-us">
-        <div class="container">
-            <h2>Warum D-BUILDER?</h2>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>Über D-BUILDER</h2>
 
-            <div class="features-grid">
-
-                <div class="feature-item">
-                    <div class="icon">🏆</div>
-                    <h3>Qualitätsgarantie</h3>
-                    <p>Wir halten uns an strenge EU-Baustandards für nachhaltige Ergebnisse.</p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="icon">📅</div>
-                    <h3>Termintreue</h3>
-                    <p>Wir schätzen Ihre Zeit und arbeiten effizient, um alle Fristen einzuhalten.</p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="icon">💼</div>
-                    <h3>Professionelles Team</h3>
-                    <p>Erfahrene Handwerker, die Präzision in jede Renovierung bringen.</p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="icon">💰</div>
-                    <h3>Klare Preisgestaltung</h3>
-                    <p>Keine versteckten Kosten. Detaillierte und transparente Angebote.</p>
-                </div>
-
-            </div>
+        <div class="about-text">
+            <p>
+                SIA D-BUILDER ist ein in Lettland registriertes Bauunternehmen und bietet professionelle
+                Bau- und Renovierungsleistungen in ganz Europa an.
+            </p>
+            <div class="since-badge">Seit 2023</div>
         </div>
-    </section>
 
-    <section class="process">
-        <div class="container">
-            <h2>Unser professioneller Prozess</h2>
-
-            <div class="process-steps">
-
-                <div class="step">
-                    <span class="step-num">01</span>
-                    <h3>Beratung</h3>
-                    <p>Erstellung einer klaren Vision und Durchführung einer technischen Bewertung.</p>
-                </div>
-
-                <div class="step">
-                    <span class="step-num">02</span>
-                    <h3>Planung</h3>
-                    <p>Detaillierte Budgetierung, Materialauswahl und Zeitplanerstellung.</p>
-                </div>
-
-                <div class="step">
-                    <span class="step-num">03</span>
-                    <h3>Ausführung</h3>
-                    <p>Präzise Renovierungsarbeiten unter strenger Qualitätskontrolle.</p>
-                </div>
-
-                <div class="step">
-                    <span class="step-num">04</span>
-                    <h3>Übergabe</h3>
-                    <p>Gründliche Inspektion und Projektabschluss gemäß aller Standards.</p>
-                </div>
-
-            </div>
+        <div class="company-card">
+            <p class="company-name">SIA D-BUILDER</p>
+            <p><strong>Reg.-Nr.:</strong> 40203480659</p>
+            <p><strong>Adresse:</strong> Mirdzas Kempes iela 11-34, Riga, LV-1014</p>
+            <p><strong>E-Mail:</strong> dbuilder.team@gmail.com</p>
+            <p><strong>Tel.:</strong> +371 28601141</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>Häufig gestellte Fragen</h2>
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <div class="container">
+        <h2>Kontakt</h2>
 
-            <div class="faq-list">
+        <form class="contact-form"
+              action="https://formsubmit.co/dbuilder.team@gmail.com"
+              method="POST">
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Wo bietet D-BUILDER seine Leistungen an?
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Wir sind hauptsächlich in <strong>Lettland, Deutschland und den Niederlanden</strong> tätig.
-                        </p>
-                    </div>
-                </div>
+            <input type="hidden" name="_captcha" value="false">
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Wie erfolgt die Projektschätzung?
-                    </button>
-                    <div class="faq-answer">
-                        <p>Unsere Experten führen eine technische Bewertung durch, gefolgt von einem Festpreisangebot.</p>
-                    </div>
-                </div>
+            <input type="text" name="name" placeholder="Ihr Name" required>
+            <input type="email" name="email" placeholder="Ihre E-Mail" required>
+            <textarea name="message" placeholder="Projektdetails..." required></textarea>
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Entspricht Ihr Unternehmen den EU-Sicherheitsstandards?
-                    </button>
-                    <div class="faq-answer">
-                        <p>Jedes von SIA D-BUILDER verwaltete Projekt entspricht strikt den europäischen Bauvorschriften.</p>
-                    </div>
-                </div>
+            <button type="submit" class="submit-btn">Nachricht senden</button>
+        </form>
+    </div>
+</section>
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Wie lange dauert eine Komplettrenovierung?
-                    </button>
-                    <div class="faq-answer">
-                        <p>Wir erstellen vor Beginn einen festen Zeitplan und garantieren die Einhaltung der Fristen.</p>
-                    </div>
-                </div>
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+  <p>© 2026 SIA D-BUILDER. Alle Rechte vorbehalten.</p>
+  <p>
+    <a href="impressum-de.html" style="color:#fff; text-decoration:none;">Impressum</a>
+    <span style="opacity:.6;"> | </span>
+    <a href="datenschutz-de.html" style="color:#fff; text-decoration:none;">Datenschutz</a>
+  </p>
+</footer>
 
-            </div>
-        </div>
-    </section>
+<!-- Back to top -->
+<button id="backToTop" class="scroll-top-btn" aria-label="Nach oben">↑</button>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Kontaktieren Sie uns</h2>
+<script>
+    const topBtn = document.getElementById("backToTop");
 
-            <form class="contact-form" action="https://formsubmit.co/dbuilder.team@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://datokiki777.github.io/d-builder-website/de.html">
-                <input type="hidden" name="_captcha" value="false">
+    window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 400) {
+            topBtn.style.visibility = "visible";
+            topBtn.style.opacity = "1";
+        } else {
+            topBtn.style.visibility = "hidden";
+            topBtn.style.opacity = "0";
+        }
+    });
 
-                <input type="text" name="name" placeholder="Ihr Name" required>
-                <input type="email" name="email" placeholder="Ihre E-Mail" required>
-                <textarea name="message" placeholder="Projektdetails..." required></textarea>
+    topBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
 
-                <button type="submit" class="submit-btn">Nachricht senden</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <p>© 2026 SIA D-BUILDER. Alle Rechte vorbehalten.</p>
-    </footer>
-
-    <button id="backToTop" class="scroll-top-btn">↑</button>
-
-    <script>
-        const faqQuestions = document.querySelectorAll('.faq-question');
-
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-
-                question.classList.toggle('active');
-                const answer = question.nextElementSibling;
-
-                question.setAttribute(
-                    "aria-expanded",
-                    question.classList.contains("active")
-                );
-
-                if (question.classList.contains('active')) {
-                    answer.style.maxHeight = answer.scrollHeight + "px";
-                } else {
-                    answer.style.maxHeight = 0;
-                }
-            });
-        });
-
-        const topBtn = document.getElementById("backToTop");
-
-        window.onscroll = function () {
-            if (document.documentElement.scrollTop > 400) {
-                topBtn.style.visibility = "visible";
-                topBtn.style.opacity = "1";
-            } else {
-                topBtn.style.visibility = "hidden";
-                topBtn.style.opacity = "0";
-            }
-        };
-
-        topBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-    </script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
 
 </body>
 </html>
