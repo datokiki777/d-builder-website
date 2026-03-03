@@ -1,24 +1,58 @@
-/* --- Global Styles --- */
+/* =====================================================
+   D-BUILDER | style.css
+   Structure:
+   01) Reset + Base
+   02) Layout
+   03) Navigation
+   04) Language Switcher
+   05) Hero
+   06) Buttons
+   07) Sections + Typography
+   08) Services
+   09) Why Choose Us
+   10) About
+   11) FAQ
+   12) Contact Form
+   13) Footer + Utilities
+   14) Responsive (ALWAYS LAST)
+   99) Custom Overrides (add new stuff here)
+===================================================== */
+
+
+/* =========================
+   01) RESET + BASE
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     background-color: #fcfcfc;
     color: #444;
     line-height: 1.7;
     overflow-x: hidden;
     padding-top: 70px;
+    text-rendering: optimizeLegibility;
 }
 
-/* --- Navigation --- */
+
+/* =========================
+   02) LAYOUT
+========================= */
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================
+   03) NAVIGATION
+========================= */
 .navbar {
     position: fixed;
     top: 0;
@@ -32,27 +66,28 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-    .navbar ul {
-        display: flex;
-        list-style: none;
-        gap: 40px;
-    }
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
 
-        .navbar ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
 
-        .navbar ul li a:hover {
-            color: #ffc107;
-        }
+.navbar ul li a:hover { color: #ffc107; }
 
-/* --- Language Switcher --- */
+
+/* =========================
+   04) LANGUAGE SWITCHER
+========================= */
 .lang-switch {
     display: flex;
     align-items: center;
@@ -62,64 +97,68 @@ body {
     font-weight: 600;
 }
 
-    .lang-switch a {
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    .lang-switch a:hover, 
-    .lang-switch a.active {
-        color: #ffc107;
-    }
-
-    .lang-switch span {
-        color: rgba(255, 255, 255, 0.3);
-    }
-
-/* --- Hero Section --- */
-.hero-section {
-    background-color: #0d3d7a;
-    color: white;
-    text-align: center;
-    padding: 160px 20px 100px 20px;
+.lang-switch a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-    .main-logo {
-        width: 125px;
-        height: auto;
-        display: block;
-        margin: 0 auto 25px;
-        border: 2.5px solid rgba(255, 255, 255, 0.3);
-        border-radius: 22px;
-        padding: 5px;
-        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s ease;
-        background-color: rgba(13, 61, 122, 0.5);
-    }
+.lang-switch a:hover,
+.lang-switch a.active {
+    color: #ffc107;
+}
 
-    .main-logo:hover {
-        transform: scale(1.08);
-        border-color: #ffc107;
-    }
+.lang-switch span { color: rgba(255, 255, 255, 0.3); }
 
-    .hero-section h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 15px;
-        letter-spacing: -1px;
-    }
 
-    .hero-section p {
-        font-size: 1.1rem;
-        font-weight: 300;
-        max-width: 600px;
-        margin: 0 auto 35px;
-        opacity: 0.9;
-    }
+/* =========================
+   05) HERO
+========================= */
+.hero-section {
+    background-color: #0d3d7a;
+    color: #fff;
+    text-align: center;
+    padding: 160px 20px 100px;
+}
 
-/* --- Buttons --- */
-.quote-btn, 
+.main-logo {
+    width: 125px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+    border: 2.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 22px;
+    padding: 5px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    background-color: rgba(13, 61, 122, 0.5);
+}
+
+.main-logo:hover {
+    transform: scale(1.08);
+    border-color: #ffc107;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 35px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   06) BUTTONS
+========================= */
+.quote-btn,
 .submit-btn {
     background: #ffc107;
     color: #0d3d7a;
@@ -134,28 +173,36 @@ body {
     box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
 }
 
-    .quote-btn:hover, 
-    .submit-btn:hover {
-        background: #fff;
-        transform: translateY(-3px);
-        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
+.quote-btn:hover,
+.submit-btn:hover {
+    background: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
 
-/* --- Services --- */
+
+/* =========================
+   07) SECTIONS + TYPOGRAPHY
+========================= */
 section {
     padding: 100px 20px;
     scroll-margin-top: 80px;
 }
 
-    h2 {
-        font-size: 32px;
-        text-align: center;
-        color: #0d3d7a;
-        margin-bottom: 50px;
-        font-weight: 800;
-    }
+h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #0d3d7a;
+    margin-bottom: 50px;
+    font-weight: 800;
+}
 
-.services-grid {
+
+/* =========================
+   08) SERVICES
+========================= */
+.services-grid,
+.services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
@@ -163,165 +210,185 @@ section {
     margin: 0 auto;
 }
 
-    .service-card {
-        background: #ffffff;
-        border-top: 5px solid #ffc107;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-        overflow: hidden;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        padding-top: 5px;
-    }
+.service-card {
+    background: #fff;
+    border-top: 5px solid #ffc107;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 5px 0 20px;
+}
 
-    .service-card:hover {
-        transform: translateY(-5px);
-    }
+.service-card:hover { transform: translateY(-5px); }
 
-    .service-card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        display: block;
-        margin-top: 0;
-    }
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
 
-    .service-card h3 {
-        color: #0d3d7a;
-        margin: 20px 20px 10px 20px;
-        font-size: 1.4rem;
-    }
+.service-card h3 {
+    color: #0d3d7a;
+    margin: 20px 20px 10px;
+    font-size: 1.4rem;
+}
 
-    .service-card p {
-        margin: 0 20px 20px 20px;
-        color: #555;
-        line-height: 1.6;
-    }
+.service-card p {
+    margin: 0 20px 20px;
+    color: #555;
+    line-height: 1.6;
+}
 
-/* --- Why Choose Us --- */
+
+/* =========================
+   09) WHY CHOOSE US
+========================= */
 .feature-item {
-        text-align: left;
-        margin-bottom: 30px;
-        padding: 10px 25px;
-        position: relative;
-        border-right: 4px solid rgba(13, 61, 122, 0.1);
-        transition: 0.3s;
-}
-    .feature-item:hover {
-        border-right: 4px solid #0d3d7a;
-        background: rgba(13, 61, 122, 0.02);
-    }
-    
-    .feature-item > *:first-child {
-        font-size: 55px !important;
-        display: block !important;
-        margin-bottom: 15px !important;
-        text-align: left !important;
-    }
-
-    .feature-item h4 {
-        color: #333;
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-
-    .feature-item p {
-        color: #666;
-        line-height: 1.5;
-    }
-
-/* --- About Section --- */
-.about-section {
-    background-color: #f4f7fa;
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 10px 25px;
+    position: relative;
+    border-right: 4px solid rgba(13, 61, 122, 0.1);
+    transition: 0.3s;
 }
 
-    .about-text {
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto 40px;
-        font-size: 1.1rem;
-        color: #555;
-    }
+.feature-item:hover {
+    border-right-color: #0d3d7a;
+    background: rgba(13, 61, 122, 0.02);
+}
 
-    .company-card {
-        background: #fff;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 30px;
-        border-radius: 15px;
-        text-align: center;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    }
+  .feature-icon{
+    font-size: 55px;
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1;
+}
 
-    .company-name {
-        font-weight: 800;
-        color: #0d3d7a;
-        font-size: 1.2rem;
-    }
+/* IMPORTANT FIX:
+   ადრე იყო: .feature-item > *:first-child { font-size:55px... }
+   ეს ბრმად ადიდებდა პირველ ელემენტს და თუ icon-font არ იტვირთებოდა,
+   “იეროგლიფს” უზარმაზრად აჩვენებდა.
+   ახლა ვადიდებთ მხოლოდ აიქონის ტიპებს. */
+.feature-item > i:first-child,
+.feature-item > svg:first-child,
+.feature-item > .feature-icon:first-child {
+    font-size: 55px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1;
+}
 
-/* --- FAQ --- */
+.feature-item h4 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   10) ABOUT
+========================= */
+.about-section { background-color: #f4f7fa; }
+
+.about-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.company-card {
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.company-name {
+    font-weight: 800;
+    color: #0d3d7a;
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   11) FAQ
+========================= */
 .faq-list {
     max-width: 800px;
     margin: 0 auto;
 }
 
-    .faq-item {
-        margin-bottom: 15px;
-        border-radius: 12px;
-        background: #ffffff;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        overflow: hidden;
-        border: 1px solid #eee;
-    }
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid #eee;
+}
 
-    .faq-question {
-        width: 100%;
-        padding: 22px 25px;
-        background: #fff;
-        border: none;
-        text-align: left;
-        color: #0d3d7a;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.3s;
-    }
+.faq-question {
+    width: 100%;
+    padding: 22px 25px;
+    background: #fff;
+    border: none;
+    text-align: left;
+    color: #0d3d7a;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
 
-    .faq-question:hover {
-        background: #fcfcfc;
-    }
+.faq-question:hover { background: #fcfcfc; }
 
-    .faq-question::after {
-        content: '+';
-        font-size: 20px;
-        color: #ffc107;
-        transition: 0.3s;
-    }
+.faq-question::after {
+    content: "+";
+    font-size: 20px;
+    color: #ffc107;
+    transition: 0.3s;
+}
 
-    .faq-question.active::after {
-        content: '−';
-        transform: rotate(180deg);
-    }
+.faq-question.active::after {
+    content: "−";
+    transform: rotate(180deg);
+}
 
-    .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.4s ease-in-out;
-        background: #f9fbff;
-    }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    background: #f9fbff;
+}
 
-    .faq-answer p {
-        padding: 20px 25px;
-        color: #555;
-        line-height: 1.6;
-        border-top: 1px solid #f0f0f0;
-    }
+.faq-answer p {
+    padding: 20px 25px;
+    color: #555;
+    line-height: 1.6;
+    border-top: 1px solid #f0f0f0;
+}
 
-/* --- Contact Form --- */
+
+/* =========================
+   12) CONTACT FORM
+========================= */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
@@ -330,29 +397,32 @@ section {
     gap: 15px;
 }
 
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        display: block;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        font-size: 16px;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
 
-    .contact-form textarea {
-        height: 120px;
-        resize: vertical;
-    }
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
 
-    .submit-btn {
-        width: 100%;
-        padding: 15px;
-    }
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+}
 
-/* --- Footer & Scroll --- */
+
+/* =========================
+   13) FOOTER + UTILITIES
+========================= */
 .main-footer {
     background: #0d3d7a;
     color: #fff;
@@ -362,6 +432,7 @@ section {
     opacity: 0.8;
 }
 
+/* Scroll to top button */
 .scroll-top-btn {
     position: fixed;
     bottom: 30px;
@@ -373,6 +444,7 @@ section {
     border-radius: 50%;
     color: #0d3d7a;
     font-size: 20px;
+    font-weight: 800;
     cursor: pointer;
     z-index: 9999;
     opacity: 0;
@@ -380,15 +452,59 @@ section {
     transition: 0.4s;
 }
 
-/* --- Responsive --- */
+/* Fallback: თუ ღილაკი ცარიელია, აჩვენოს ჩვეულებრივი ↑ (არ არის დამოკიდებული icon-font-ზე) */
+.scroll-top-btn:empty::before {
+    content: "↑";
+    display: inline-block;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* =========================
+   14) RESPONSIVE (ALWAYS LAST)
+========================= */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
         height: auto;
         padding: 10px 0;
     }
+
     .navbar ul {
         gap: 15px;
         margin-bottom: 5px;
     }
+
+    .hero-section {
+        padding: 140px 16px 80px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
 }
+
+
+/* =========================
+   99) CUSTOM OVERRIDES (NEW)
+   Add all new rules below
+========================= */
+/*
+Example:
+.since-badge{
+    display:inline-block;
+    background:#0d3d7a;
+    color:#fff;
+    padding:8px 16px;
+    border-radius:20px;
+    font-weight:600;
+    margin-top:15px;
+}
+*/
